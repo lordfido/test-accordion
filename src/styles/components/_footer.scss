@@ -1,0 +1,16 @@
+.Footer {
+  background-color: $green-dark;
+  color: #fff;
+  height: 105px;
+  font-family: Verdana, arial;
+  font-size: 10pt;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+
+  & > * {
+    margin: 15px auto;
+  }
+}

@@ -1,0 +1,55 @@
+.Accordion {
+  $height: 300px;
+  $accordion-tab: 40px;
+
+  background-color: $green-lighter;
+  border: 1px solid $green-lighter;
+  border-radius: 4px;
+  display: block;
+  min-width: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+
+  &-title,
+  &-data {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  &-title {
+    background-color: $green-light;
+    border-bottom: 1px solid $green-lighter;
+    height: $accordion-tab;
+    padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+
+  &-data {
+    padding: 0 10px;
+    transition: height .3s;
+    height: 0;
+
+    &.is-open {
+      border-bottom: 1px solid $green-lighter;
+      height: $height;
+    }
+
+    &:last-of-type.is-open {
+      border-top: 1px solid $green-lighter;
+      border-bottom: none;
+    }
+  }
+
+  &-data > * {
+    padding: 10px 0;
+  }
+}

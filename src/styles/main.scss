@@ -1,0 +1,39 @@
+$white: #F9F9F9;
+$fake-white: #ddd;
+$gray-lighter: #bbb;
+$gray-light: #999;
+$gray: #777;
+$gray-dark: #555;
+$gray-darker: #333;
+$black: #111;
+
+$green-lighter: #e5f2d0;
+$green-light: #c2dea0;
+$green: #30923E;
+$green-dark: #2c442c;
+
+$orange: #f7af33;
+
+@import
+  'components/accordion',
+  'components/button',
+  'components/footer',
+  'components/link';
+
+body, body * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $white;
+}
+
+.Page {
+  background: white;
+  margin: 0 auto;
+  max-width: 980px;
+  min-height: calc(100vh - 105px);
+  padding: 20px;
+}

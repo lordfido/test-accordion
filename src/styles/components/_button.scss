@@ -1,0 +1,21 @@
+.Buttonbar {
+  background-color: $green-light;
+  border-radius: 8px;
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: right;
+  width: 100%;
+}
+
+.Button {
+  background-color: $green;
+  border: none;
+  color: $white;
+  cursor: pointer;
+  font-size: 22px;
+  height: 40px;
+  padding: 0px 30px;
+  appearance: none;
+  -webkit-appearance: none;
+}
