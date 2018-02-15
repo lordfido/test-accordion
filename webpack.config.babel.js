@@ -19,7 +19,7 @@ const webpackConfig = {
   output: {
     path: PATH_DIST,
     filename: '[name]-[hash].js',
-    publicPath: '/',
+    publicPath: '/test-accordion/dist/',
   },
 
   module: {
